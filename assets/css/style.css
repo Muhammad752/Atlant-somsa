@@ -1,0 +1,282 @@
+*, ul, p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  background: rgb(246, 246, 246);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  background-color: #51267d;
+  color: white;
+}
+.header .delivery {
+  display: none;
+}
+.header .delivery img {
+  width: 30px;
+  height: 30px;
+}
+.header__lang {
+  color: white;
+}
+.header .dropdown-menu {
+  min-width: unset;
+  width: 100%;
+}
+.header .navbar .logo {
+  display: none;
+}
+.header .navbar .contact {
+  display: none;
+}
+.header .navbar .contact img {
+  width: 35px;
+  height: 35px;
+}
+.header .navbar__item {
+  flex-shrink: 0;
+  word-wrap: none;
+}
+.header .navbar ul {
+  display: flex;
+  gap: 10px;
+}
+.header .logo {
+  height: 70px;
+}
+.header__flag {
+  height: 75px;
+  width: 45px;
+  object-fit: contain;
+  color: white;
+}
+.header-social {
+  display: flex;
+  gap: 10px;
+}
+.header-social img {
+  height: 35px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+.header .container > * {
+  flex-shrink: 0;
+}
+.header .container .coverup {
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 500vh;
+  background-color: rgba(0, 0, 0, 0.39);
+  z-index: 3;
+}
+.header__burger {
+  display: none;
+}
+.header__burger label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header__burger span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #fff;
+  margin-bottom: 8px;
+}
+.header__burger span.middle {
+  width: 20px;
+}
+
+main {
+  margin-top: 130px;
+}
+main .container {
+  padding-top: 40px;
+}
+
+@media (max-width: 1200px) {
+  .header__burger {
+    display: block;
+  }
+  .header .navbar {
+    max-width: 50%;
+    z-index: 6;
+    align-items: flex-start;
+    position: fixed;
+    background-color: #51267d;
+    height: 100vh;
+    top: 0;
+    transform-origin: left;
+    transition-duration: 3s;
+    left: 100%;
+  }
+  .header .navbar .logo {
+    width: 120px;
+    height: 50px;
+    display: block;
+  }
+  .header .navbar .contact {
+    display: block;
+  }
+  .header .navbar .contact > * {
+    margin-top: 30px;
+  }
+  .header .navbar ul {
+    padding: 30px;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .header .navbar ul li {
+    margin-top: 30px;
+  }
+  .header #check:checked ~ .navbar {
+    left: 0;
+  }
+  .header #check:checked ~ .coverup {
+    display: block;
+  }
+  .header__burger label {
+    transition: 5s;
+    transition-timing-function: ease;
+  }
+  #check:checked ~ .header__burger label {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 770px) {
+  main {
+    margin-top: 161px !important;
+  }
+  .header .container {
+    justify-content: space-evenly;
+  }
+  .header-social {
+    display: none;
+  }
+  .header .phone {
+    order: 5;
+  }
+  .header .delivery {
+    display: block;
+  }
+}
+.footer {
+  background: #51267d;
+  color: white;
+}
+.footer .container {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 50px;
+}
+.footer__logo {
+  height: 30px;
+  width: 100%;
+  margin: auto;
+  object-fit: contain;
+}
+.footer__bottom {
+  margin-top: 70px;
+}
+
+@media (max-width: 770px) {
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.section-header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: red;
+  font-weight: 700;
+}
+
+main {
+  margin-top: 129px;
+}
+
+.products {
+  padding: 100px 0 0;
+}
+.products .type {
+  margin-top: 3rem;
+  color: white;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1.334;
+  background-color: #51267d;
+  border-radius: 20px;
+  padding: 15px;
+}
+.products .box, .products .box2 {
+  row-gap: 20px;
+  margin-top: 24px;
+}
+.products .card {
+  min-height: 400px;
+}
+.products .card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.products .card .price {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.offices .section-header {
+  margin: 3rem 0;
+}
+.offices__contact p {
+  margin-top: 10px;
+}
+.offices .office1 {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.offices .office1 > div {
+  padding: 20px;
+}
+
+@media (max-width: 360px) {
+  .box .card, .box2 .card {
+    min-height: 500px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

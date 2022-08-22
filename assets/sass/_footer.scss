@@ -1,0 +1,28 @@
+.footer{
+    .container{
+        margin-top: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 50px;
+    }
+    &__logo{
+        height: 30px;
+        width: 100%;
+        margin: auto;
+        object-fit: contain;
+    }
+    background: #51267d;
+    color: white;
+    &__bottom{
+        margin-top: 70px;
+    }
+}
+
+@media (max-width:770px){
+    .footer{
+        &__bottom{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

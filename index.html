@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+        <input style="display: none;" type="checkbox" name="" id="check">
+        <label for="check" class="coverup"></label>
+        <div class="header__burger">
+            <label for="check">
+            <span></span>
+            <span class="middle"></span>
+            <span></span>
+            </label>
+        </div>
+        <a href="">
+        <img class="logo" src="./assets/imgs/logo.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <img class="logo" src="./assets/imgs/logo.png" alt="">
+                <li class="navbar__item"><a href="./index.html">Asosiy</a></li>
+                <li class="navbar__item"><a href="./about.html">Biz haqimizda</a></li>
+                <li class="navbar__item"><a href="./comments.html">Mijoz sharhi</a></li>
+                <div class="contact">
+                    <div class="social d-flex justify-content-center gap-3">
+                        <a href="telegram.com">
+                            <img src="./assets/imgs/tg.svg" alt="">
+                        </a>
+                        <a href="instagram.com">
+                            <img src="./assets/imgs/inst.svg" alt="">
+                        </a>
+                        <a href="facebook.com">
+                            <img src="./assets/imgs/fb.svg" alt="">
+                        </a>
+                    </div>
+                    <p><a href="tel:+998702040202"></a> <i class="fa-solid fa-phone"></i> +998 70 204 02 02</p>
+                </div>
+            </ul>
+        </nav>
+        <div class="header-social">
+            <a href="telegram.com">
+            <img src="./assets/imgs/tg.svg" alt="">
+            </a>
+            <a href="instagram.com">
+            <img src="./assets/imgs/inst.svg" alt="">
+            </a>
+            <a href="facebook.com">
+            <img src="./assets/imgs/fb.svg" alt="">
+            </a>
+        </div>
+        <div class="phone">
+            <img src="./assets/imgs/telep.png" alt="">
+            <a href="tel:+998702040202">+998702040202</a>
+        </div>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle header__lang" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="header__flag" src="./assets/imgs/uz.png" alt=""> UZ
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img src="./assets/imgs/us.png" alt=""> EN</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./assets/imgs/ru.png" alt=""> RU</a></li>
+              </ul>
+        </div>
+        <div class="delivery">
+            <a href="">
+            <img src="./assets/imgs/dostavka.png" alt=""> Доставка
+            </a>
+        </div>
+        </div>
+    </header>
+    <main>
+    <sectiom class="showcase">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="">
+                <img src="./assets/imgs/show1.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="">
+                <img src="./assets/imgs/show2.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="">
+                <img src="./assets/imgs/show3.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </sectiom>
+    <section class="products container">
+        <h2 class="section-header">Mahsulotlarimiz</h2>
+        <p class="type">Somsa turlari.</p>
+        <div class="box row">
+            <div class="col-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="./assets/imgs/somsa1.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Go'shtli somsa</h5>
+                    <p class="card-subtitle">Mol go'shtidan somsa Shakli - uchburchak, ustida qora sedana!</p>
+                    <h5 class="price">6000 so'm</h5>
+                </div>
+            </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="./assets/imgs/somsa2.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Tovuqli somsa</h5>
+                    <p class="card-subtitle">Tovuq goshtidan somsa. Shakli uchburchak, ustida oq sedana.</p>
+                    <h5 class="price">4500 so'm</h5>
+                </div>
+            </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="./assets/imgs/somsa3.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Kartoshkali somsa</h5>
+                    <p class="card-subtitle">To'rtburchak oq kunjut!</p>
+                    <h5 class="price">3000 so'm</h5>
+                </div>
+            </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="./assets/imgs/somsa4.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Sirli tovuq somsa</h5>
+                    <p class="card-subtitle">Pishloq va tovuq aralashmasi yangi tam!</p>
+                    <h5 class="price">5000 so'm</h5>
+                </div>
+            </div>
+            </div>
+        </div>
+        <p class="type">Non turlari</p>
+        <div class="box2 row">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="./assets/imgs/non1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">PATIR NON</h5>
+                        <p class="card-subtitle">qaynoqqina nonlar. yetkazib ham beramiz</p>
+                    <h5 class="price">3500 so'm</h5>
+                </div>
+            </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="./assets/imgs/non2.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">NON</h5>
+                    <p class="card-subtitle">Qaynoqqina nonlar yetkazib beramiz</p>
+                    <h5 class="price">3500 so'm</h5>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="offices">
+        <h2 class="section-header">Bizning filiallarimiz</h2>
+        <div class="container">
+            <div class="office1 d-flex row g-0">
+            <div class="col-xl-5 d-flex flex-column justify-content-between">
+                <h3>Atlant Navoiy</h3>
+                <img src="/assets/imgs/logo.png" alt="logo">
+                <div class="offices__contact">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> Manzil: Navoiy ko'chasi
+                </p>
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Ish vaqti: 7:00 dan 22:00 gacha
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    Telefon raqam <a href="tel:+998702040202">+998702040202</a>
+                </p>
+                <p>
+                    <i class="fa-solid fa-flag"></i>
+                    Mo'ljal: Atlant poliklinikasi
+                </p>
+                </div>
+            </div>
+            <iframe class="col-xl-7" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.6590997211165!2d69.5784291151933!3d41.468308579256906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aefd34a305d9f1%3A0x3f5ea26f44344a1!2sAtlant%20Somsa!5e0!3m2!1sen!2s!4v1660477665364!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="office1 d-flex mt-3 row g-0">
+            <div class="col-xl-5 d-flex flex-column justify-content-between">
+                <h3>Atlant 4-mikrorayon</h3>
+                <img src="/assets/imgs/logo.png" alt="logo">
+                <div class="offices__contact">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> Manzil: Atlant 4-mikrorayon
+                </p>
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Ish vaqti: 7:00 dan 22:00 gacha
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    Telefon raqam <a href="tel:+998702040202">+998702040202</a>
+                </p>
+                <p>
+                    <i class="fa-solid fa-flag"></i>
+                    Mo'ljal: 4-mikrorayon 60-uy yonida
+                </p>
+                </div>
+            </div>
+            <iframe class="col-xl-7" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47816.47428564764!2d69.5849948!3d41.4927959!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aee354d7ccb4d3%3A0x7dc09c9f6e885ce3!2sAtlan%20Samsa!5e0!3m2!1sen!2s!4v1660479080926!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+        <img src="./assets/imgs/logo.png" alt="" class="footer__logo">
+        <div class="footer__bottom d-flex justify-content-between">
+            <p>© Atlant Somsa 2009 - 2022 Barcha huquqlar himoyalangan</p>
+            <p>Developed by Ibrohim Abdulfattah</p>
+        </div>
+        </div>
+    </footer>
+    <script src="./bootstrap/bootstrap.js"></script>
+    </main>
+</body>
+</html>

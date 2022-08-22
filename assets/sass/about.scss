@@ -1,0 +1,25 @@
+@import "default";
+@import "header";
+@import "footer";
+
+.connection{
+    .container{
+        .box{
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+        }
+    }
+}
+.form{
+    input{
+        margin-top: 20px;
+        width: 100%;
+        padding: 15px;
+    }
+    textarea{
+        margin-top: 3rem;
+        padding: 15px;
+        width: 100%;
+    }
+}
